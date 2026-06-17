@@ -77,3 +77,17 @@ document.addEventListener("keydown", function (event) {
 });
 
 
+var music = document.getElementById("bgMusic");
+
+document.addEventListener("keydown", function (event) {
+    if (event.key === "k") {
+        music.play();
+    }
+
+    
+    if (event.key === "p") {
+        music.pause();
+    }
+
+});
+
