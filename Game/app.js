@@ -1,3 +1,24 @@
+alert(
+"W = Hulk Fly\n" +
+"S = Hulk Bottom\n" +
+"A = Hulk Left\n" +
+"D = Hulk Right\n" +
+"Z = Hulk Normal\n\n" +
+
+"Arrow Up = Sir Fly\n" +
+"Arrow Down = Sir Bottom\n" +
+"Arrow Left = Sir Left\n" +
+"Arrow Right = Sir Right\n" +
+"H = Sir Normal\n\n" +
+
+"K = Play Music\n" +
+"P = Pause Music"
+);
+
+
+
+
+
 var hulk = document.getElementById("hulk");
 var sir = document.getElementById("sir");
 
@@ -6,7 +27,7 @@ var hulkLeft = 50;
 var hulkBottom = 0;
 
 // Player 2 position
-var sirLeft = 50;
+var sirRight = 50;
 var sirBottom = 0;
 
 
@@ -57,14 +78,14 @@ document.addEventListener("keydown", function (event) {
     }
 
     if (event.key === "ArrowLeft") {
-        sirLeft -= 10;
-        sir.style.left = sirLeft + "px";   
+        sirRight -= 10;
+        sir.style.right = sirRight + "px";   
         sir.src = "sir-walk.gif";
     }
 
     if (event.key === "ArrowRight") {
-        sirLeft += 10;
-        sir.style.left = sirLeft + "px";   
+        sirRight += 10;
+        sir.style.right = sirRight + "px";   
         sir.src = "sir-walk.gif";
     }
 
@@ -90,4 +111,3 @@ document.addEventListener("keydown", function (event) {
     }
 
 });
-
