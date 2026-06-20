@@ -78,13 +78,13 @@ document.addEventListener("keydown", function (event) {
     }
 
     if (event.key === "ArrowLeft") {
-        sirRight -= 10;
+        sirRight += 10;
         sir.style.right = sirRight + "px";   
         sir.src = "sir-walk.gif";
     }
 
     if (event.key === "ArrowRight") {
-        sirRight += 10;
+        sirRight -= 10;
         sir.style.right = sirRight + "px";   
         sir.src = "sir-walk.gif";
     }
